@@ -719,7 +719,7 @@ require('lazy').setup({
         -- You can use 'stop_after_first' to run the first available formatter from the list
         javascript = { 'prettierd', 'prettier', stop_after_first = true },
         typescript = { 'prettierd', 'prettier', stop_after_first = true },
-        c = { 'clang-format', 'clang-format', stop_after_first = true },
+        c = { 'clang-format' },
       },
     },
   },
@@ -937,7 +937,11 @@ require('lazy').setup({
     'stevearc/oil.nvim',
     ---@module 'oil'
     ---@type oil.SetupOpts
-    opts = {},
+    opts = {
+      view_options = {
+        show_hidden = true,
+      },
+    },
     -- Optional dependencies
     dependencies = { { 'echasnovski/mini.icons', opts = {} } },
     -- dependencies = { "nvim-tree/nvim-web-devicons" }, -- use if you prefer nvim-web-devicons
