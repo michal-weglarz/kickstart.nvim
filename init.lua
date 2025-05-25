@@ -721,6 +721,7 @@ require('lazy').setup({
         typescript = { 'prettierd', 'prettier', stop_after_first = true },
         c = { 'clang-format' },
         cs = { 'csharpier' },
+        go = { 'gofmt' },
       },
     },
   },
